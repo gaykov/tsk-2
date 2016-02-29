@@ -36,3 +36,19 @@ body {
 .maze__cell_current {
     background-color: #f21000;
 }
+
+aside {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#run {
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background: #00af28;
+    border: none;
+    box-shadow: none;
+    color: white;
+}
