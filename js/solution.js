@@ -73,7 +73,7 @@
         // todo: построить правильный маршрут к выходу
         var t = new RecursiveSolver(maze);
         t.solve(x, y);
-        return t.correctPath;
+        return t.correctPath.reverse();
     }
 
     root.maze.solution = solution;

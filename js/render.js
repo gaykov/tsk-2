@@ -11,9 +11,10 @@
      * @param {string} className CSS класс
      * @returns {HTMLElement} HTML элемент
      */
-    function element(type, className) {
+    function element(type, className, x, y) {
         var elem = document.createElement(type);
         elem.className = className;
+        elem.id = x + '-' + y;
         return elem;
     }
 
@@ -70,7 +71,7 @@
                 }
 
                 rowElem.appendChild(
-                    element('div', 'maze__cell' + (type ? ' maze__cell_' + type : ''))
+                    element('div', 'maze__cell' + (type ? ' maze__cell_' + type : ''), x, y)
                 );
             }
 
